@@ -1,0 +1,83 @@
+.ad-container {
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  max-width: 720px;
+  height: 120px; /* más alto para dejar respirar el logo */
+  background-color: rgb(194, 193, 193);
+  color:#696767 ;
+  font-family: sans-serif;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+  
+ .ad-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-top: -17px;  /* mueve la imagen hacia arriba */
+  margin-bottom: auto; /* empuja el contenido hacia abajo */
+}
+
+
+ .ad-content {
+  flex: 1;
+  padding-top: 20px; /* antes: 10px */
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+  
+  .ad-content h2 {
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  .ad-button {
+    margin-top: 6px;
+    background-color: #696767;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    width: 100px;      
+  }
+
+  .ad-button:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  @media (max-width: 300px) {
+    .ad-container {
+      flex-direction: column;
+      max-width: 300px;
+      height: 600px;
+    }
+  
+    .ad-image {
+    margin-top: 10px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .ad-content h2 {
+      font-size: 1.3rem;
+    }
+  
+    .ad-button {
+      font-size: 1rem;
+      padding: 10px 16px;
+      margin-top: 100px;
+    }
+  }
+
