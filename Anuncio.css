@@ -34,9 +34,11 @@
 
   
   .ad-content h2 {
-    margin: 0;
-    font-size: 15px;
-  }
+  margin: 0;
+  font-size: 15px;
+  margin-top: -19px; /* o incluso negativo si querés subir más */
+}
+
   
   .ad-button {
     margin-top: 6px;
@@ -80,4 +82,9 @@
       margin-top: 100px;
     }
   }
+main h2 {
+  text-align: center;
+  margin-top: 5px; /* antes era 40px */
+  margin-bottom: 20px;
+}
 
